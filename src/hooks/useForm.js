@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
 
-const useForm = props => {
-const [state, setState] = useState('');
+const UseForm = props => {
+//const [state, setState] = useState('');
     return <div></div>;
 };
 
-useForm.propTypes = {};
+UseForm.propTypes = {};
 
-export { useForm };
+export default UseForm;
