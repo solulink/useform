@@ -1,7 +1,4 @@
 #!/bin/bash
-cd /home/ec2-user/server/src
-sudo npm start
-sudo pm2 start npm --name "useform" -- start
-sudo pm2 startup
-sudo pm2 save
-sudo pm2 restart all
+cd /home/ec2-user/server
+pm2 delete useform
+pm2 serve build 3000 --name "useform"
